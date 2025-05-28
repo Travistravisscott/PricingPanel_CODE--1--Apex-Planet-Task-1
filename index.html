@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Voting</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Voting DApp</h1>
+        <div class="section">
+            <h2>Register Voter</h2>
+            <input type="text" id="voterAddress" placeholder="Voter Address">
+            <button onclick="registerVoter()">Register</button>
+        </div>
+        <div class="section">
+            <h2>Cast Vote</h2>
+            <input type="number" id="proposalId" placeholder="Proposal ID">
+            <button onclick="castVote()">Vote</button>
+        </div>
+        <div class="section">
+            <h2>Announce Winner</h2>
+            <button onclick="announceWinner()">Announce</button>
+            <p id="winner"></p>
+        </div>
+    </div>
+</body>
+</html>
